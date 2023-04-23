@@ -22,7 +22,7 @@ cap = cv2.VideoCapture(2)
 if (cap.isOpened() == False): 
     print("Error reading from camera source")
 
-out = cv2.VideoWriter('RecordedVideo' + file_name + '.avi', -1, 20.0, (640,480))
+# out = cv2.VideoWriter('RecordedVideo' + file_name + '.avi', -1, 20.0, (640,480))
 
 # start a serial port from arduino
 # arduino = serial.Serial(port='/dev/ttyUSB0', baudrate=115200, timeout=.1)
@@ -42,7 +42,7 @@ while (cap.isOpened()):
         # frame = cv2.flip(frame,0)
 
         # write the flipped frame
-        out.write(frame)
+        # out.write(frame)
 
         # Detect Faces
         face_locations, face_names = sfr.detect_known_faces(frame)
