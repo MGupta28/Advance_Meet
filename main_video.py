@@ -16,7 +16,7 @@ sfr.load_encoding_images("training images/")
 file_name = "Test Lecture"
 
 # Load Camera
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 # cap.set(cv2.CAP_PROP_FPS, 60)
 
 if (cap.isOpened() == False): 
