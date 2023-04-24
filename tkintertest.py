@@ -28,16 +28,16 @@ bg = PhotoImage(file = "bg2.png")
 label1 = Label( root, image = bg)
 label1.place(x = 0, y = 0)
 
-ssbut=customtkinter.CTkButton(root,text="ScreenShot",text_font="Roboto 20",command=takess,height=60,borderwidth=0)
+ssbut=customtkinter.CTkButton(root,text="ScreenShot",command=takess,height=60,border_width=0)
 ssbut.place(x=100,y=100)
 
-vidtrace=customtkinter.CTkButton(root,text="Track me",text_font="Roboto 20",command=track,height=60,borderwidth=0)
+vidtrace=customtkinter.CTkButton(root,text="Track me",command=track,height=60,border_width=0)
 vidtrace.place(x=300,y=100)
 
-txt=customtkinter.CTkButton(root,text="Record Live",text_font="Roboto 20",command=summary,height=60,borderwidth=0)
+txt=customtkinter.CTkButton(root,text="Record Live",command=summary,height=60,border_width=0)
 txt.place(x=500,y=100)
 
-txt=customtkinter.CTkButton(root,text="Summarize recording",text_font="Roboto 20",command=summary2,height=60,borderwidth=0)
+txt=customtkinter.CTkButton(root,text="Summarize recording",command=summary2,height=60,border_width=0)
 txt.place(x=700,y=100)
 
 entry= Entry(root,width=40,borderwidth=0,justify=CENTER)
@@ -52,6 +52,6 @@ entry2.pack(pady=20)
 entry2.place(x=100,y=850)
 entry2.insert(0,"File Name")
 
-customtkinter.CTkButton(root, text= "Set Email",text_font="Roboto 20",command= display_text,borderwidth=0,height=60).place(x=450,y=800)
+customtkinter.CTkButton(root, text= "Set Email",command= display_text,border_width=0,height=60).place(x=450,y=800)
 
 root.mainloop()
