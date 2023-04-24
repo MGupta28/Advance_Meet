@@ -5,8 +5,8 @@ from email.mime.base import MIMEBase
 from email import encoders
 import sys
    
-fromaddr = "divyanshsharma1802@gmail.com"
-toaddr = "hriday311203@gmail.com"
+fromaddr = "krrishjindal2002@gmail.com"
+toaddr = "guptamanan282@gmail.com"
 
 print("sending mail to: " + toaddr)
 
