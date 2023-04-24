@@ -119,7 +119,7 @@ class Audio_Handler:
 
     def Mailer(self, text):
 
-        fromaddr = "divyanshsharma1802@gmail.com"
+        fromaddr = "krrishjindal2002@gmail.com"
         toaddr = SendEmail
 
         mail = "sending mail to: " + toaddr
